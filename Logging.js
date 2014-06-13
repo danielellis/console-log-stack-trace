@@ -162,33 +162,14 @@
         }
     };
 
-    var info = function() { logMessage(LogLevel.INFO, arguments); };
-    var debug = function() { logMessage(LogLevel.DEBUG, arguments); };
-    var log = function() { logMessage(LogLevel.LOG, arguments); };
-    var warn = function() { logMessage(LogLevel.WARN, arguments); };
-    var error = function() { logMessage(LogLevel.ERROR, arguments); };
-    var fatal = function() { logMessage(LogLevel.FATAL, arguments); };
-
-
-    //
-    // Demo function calls
-    //
-
-    info('console.info();');
-    debug('console.debug();');
-    log('console.log();');
-    warn('console.warn();');
-    error('console.error();');
-    fatal('console.fatal();');
-
     //
     // Override the console!
     //
 
-    console.info = info;
-    console.debug = debug;
-    console.log = log;
-    console.warn = warn;
-    console.error = error;
-    console.fatal = fatal;
+    console.info  = function() { logMessage(LogLevel.INFO, arguments); };
+    console.debug = function() { logMessage(LogLevel.DEBUG, arguments); };
+    console.log   = function() { logMessage(LogLevel.LOG, arguments); };
+    console.warn  = function() { logMessage(LogLevel.WARN, arguments); };
+    console.error = function() { logMessage(LogLevel.ERROR, arguments); };
+    console.fatal = function() { logMessage(LogLevel.FATAL, arguments); };
 }());
