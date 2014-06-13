@@ -1,12 +1,12 @@
 {
     "manifest_version": 2,
 
-    "name": "Zillow Console",
-    "description": "This extends the console with colors and stack traces.",
+    "name": "Stack Trace Console",
+    "description": "Extends the developer console log functions with colors and stack traces.",
     "version": "1.0",
 
     "icons": {
-        "128": "zillow-console-128.png"
+        "128": "stack-trace-console-128.png"
     },
 
     "content_scripts": [
